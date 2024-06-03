@@ -258,7 +258,7 @@ public class TiDBSourceExample {
                 .tableName("products") // set captured table
                 .tiConf(
                     TDBSourceOptions.getTiConfiguration(
-                        "localhost:2399", new HashMap<>()))
+                        "localhost:2379", new HashMap<>()))
                 .snapshotEventDeserializer(
                     new TiKVSnapshotEventDeserializationSchema<String>() {
                         @Override
