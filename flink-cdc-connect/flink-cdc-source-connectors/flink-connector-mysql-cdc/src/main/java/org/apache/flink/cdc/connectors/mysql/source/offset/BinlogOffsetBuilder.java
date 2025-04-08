@@ -32,7 +32,7 @@ public class BinlogOffsetBuilder {
         // Initialize default values
         offsetMap.put(BinlogOffset.EVENTS_TO_SKIP_OFFSET_KEY, "0");
         offsetMap.put(BinlogOffset.ROWS_TO_SKIP_OFFSET_KEY, "0");
-        offsetMap.put(BinlogOffset.TIMESTAMP_KEY, "0");
+        offsetMap.put(BinlogOffset.TIMESTAMP_KEY, String.valueOf(System.currentTimeMillis() / 1000));
         offsetMap.put(BinlogOffset.OFFSET_KIND_KEY, String.valueOf(BinlogOffsetKind.SPECIFIC));
     }
 
